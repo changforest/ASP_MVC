@@ -13,7 +13,7 @@ namespace ASP_MVC.Models
         public String CustomerName { get; set; }
         [DisplayName("負責員工名稱")]
         public String EmployeeName { get; set; }
-        [DisplayName("訂購單日期")]
+        [DisplayName("訂單日期")]
         public DateTime OrderDate { get; set; }
         [DisplayName("需要日期")]
         public DateTime RequiredDate { get; set; }
