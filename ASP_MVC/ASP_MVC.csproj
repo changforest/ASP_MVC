@@ -116,13 +116,16 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Dao\SqlConnect.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\EditOrder.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderAdd.cs" />
     <Compile Include="Models\OrderList.cs" />
     <Compile Include="Models\OrderSearch.cs" />
+    <Compile Include="Models\OrderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

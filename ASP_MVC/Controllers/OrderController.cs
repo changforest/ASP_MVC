@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Data.SqlClient;
+using System.Data;
+using ASP_MVC.Models;
 
 namespace ASP_MVC.Controllers
 {
@@ -23,12 +26,9 @@ namespace ASP_MVC.Controllers
         /// <returns>OrderList.cs中的假資料</returns>
         public ActionResult OrderResult()
         {
-            Models.OrderList orderlist = new Models.OrderList();
-
-            var fakedata = orderlist.GetOrderCondition();
-
-            ViewBag.orderlist = fakedata;
-
+            Models.OrderService orderservice = new Models.OrderService();
+            List<Order> list = orderservice.SelectAll();
+            ViewBag.list = list;
             return View();
         }
         /// <summary>

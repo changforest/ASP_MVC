@@ -13,6 +13,8 @@ namespace ASP_MVC.Models
         public int OrderID { get; set; }
         [DisplayName("客戶名稱")]
         public String CustomerName { get; set; }
+        [DisplayName("負責員工名稱")]
+        public String EmployeeName { get; set; }
         [DisplayName("訂購日期")]
         public DateTime OrderDate { get; set; }
         [DisplayName("發貨日期")]
